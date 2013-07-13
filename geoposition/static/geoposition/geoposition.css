@@ -1,16 +1,17 @@
+.geoposition-no-js {
+    display: none;
+}
+
 .geoposition-map {
     height: 480px;
     position: relative;
     margin: 6px 0;
-}
-
-.geoposition-address, .geoposition-search {
-    width: 50%;
+    clear: both;
 }
 
 .geoposition-address {
-    float: left;
-    text-align: left;
+    margin: auto 10px;
+    font-style: italic;
 }
 
 .geoposition-search {
@@ -26,6 +27,8 @@
     -webkit-box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     -moz-box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    z-index: 100;
+    position: absolute;
 }
 
 .geoposition-results li {
