@@ -1,4 +1,11 @@
-<p class="geoposition-widget">
-    {{ latitude.label|capfirst }}: {{ latitude.html }}<br>
-    {{ longitude.label|capfirst }}: {{ longitude.html }}
-</p>
+<div class="geoposition-widget">
+  <div>
+    {{ latitude.label }} {{ latitude.html }} {{ longitude.label }} {{ longitude.html }}
+    <span class="geoposition-address geoposition-no-js"></span>
+    
+    <div class="geoposition-search geoposition-no-js">
+      <input class="geoposition-search-input" type="search" placeholder="Search ..."/>
+    </div>
+  </div>
+  <div class="geoposition-map geoposition-no-js"></div>
+</div>
